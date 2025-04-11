@@ -7,7 +7,7 @@
     :mini-width="60"
     :breakpoint="500"
     bordered
-    class="bg-primary text-white sidebar-custom"
+    class="bg-blue-10 text-white sidebar-custom"
   >
     <q-list class="q-mt-md">
       <EssentialLink v-for="link in linksList" :key="link.title" v-bind="link" />
@@ -24,19 +24,16 @@ const leftDrawerOpen = ref(true);
 const linksList: EssentialLinkProps[] = [
   {
     title: 'Home',
-    caption: 'Página inicial',
     icon: 'home',
     link: '/',
   },
   {
     title: 'Favoritos',
-    caption: 'Seus GIFs favoritos',
     icon: 'favorite',
     link: '/favorites',
   },
   {
     title: 'Sobre',
-    caption: 'Informações sobre o projeto',
     icon: 'info',
     link: '/about',
   },

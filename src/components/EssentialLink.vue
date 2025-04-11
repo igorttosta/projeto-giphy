@@ -3,9 +3,11 @@
     clickable
     :to="link"
     exact
-    active-class="bg-blue-2 text-primary"
+    active-class="bg-blue-3 text-primary"
     :class="{ 'text-white': true }"
-    hover-class="bg-blue-2 text-primary"
+    hover-class="bg-blue-3 text-primary"
+    class="q-py-sm q-px-md rounded-borders"
+    style="margin: 4px 8px; border-radius: 8px"
   >
     <q-item-section v-if="icon" avatar>
       <q-icon :name="icon" />
