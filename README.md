@@ -1,40 +1,93 @@
-# Quasar App (projeto-giphy)
+# Projeto Giphy
 
-A Quasar Project
+Uma aplicação web para buscar e favoritar GIFs usando a API do Giphy, construída com Quasar Framework e Vue.js.
 
-## Install the dependencies
+## Pré-requisitos
+
+- Node.js (versão 14 ou superior)
+- npm ou yarn
+- Quasar CLI (@quasar/cli)
+
+## Como começar
+
+### 1. Clone o repositório
+
 ```bash
-yarn
-# or
+git clone https://github.com/igorttosta/projeto-giphy.git
+cd projeto-giphy
+```
+
+### 2. Instale as dependências
+
+Usando npm:
+
+```bash
 npm install
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+Ou usando yarn:
+
+```bash
+yarn
+```
+
+### 3. Inicie a aplicação em modo desenvolvimento
+
+Usando o Quasar CLI:
+
 ```bash
 quasar dev
 ```
 
+Ou alternativamente:
 
-### Lint the files
 ```bash
-yarn lint
-# or
-npm run lint
+npm run dev
+# ou
+yarn dev
 ```
 
+A aplicação estará disponível em `http://localhost:9000`
 
-### Format the files
-```bash
-yarn format
-# or
-npm run format
+## Estrutura do Projeto
+
+```
+├── src/                    # Código fonte
+│   ├── assets/             # Arquivos estáticos (imagens, etc)
+│   ├── boot/               # Arquivos de inicialização do Quasar
+│   ├── components/         # Componentes Vue reutilizáveis
+│   ├── css/               # Arquivos de estilo
+│   ├── layouts/           # Layouts da aplicação
+│   ├── pages/             # Páginas da aplicação
+│   ├── router/            # Configuração de rotas
+│   ├── services/          # Serviços e integrações
+│   └── stores/            # Gerenciamento de estado (Pinia)
+├── public/                # Arquivos públicos
+└── quasar.config.ts      # Configuração do Quasar
 ```
 
+## Scripts Disponíveis
 
-### Build the app for production
-```bash
-quasar build
-```
+- `quasar dev`: Inicia o servidor de desenvolvimento
+- `quasar build`: Compila o projeto para produção
+- `quasar serve`: Serve a versão de produção localmente
+- `npm run format` ou `yarn format`: Formata os arquivos do projeto
 
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
+## Funcionalidades
+
+- Busca de GIFs
+- Favoritar GIFs
+- Visualização de GIFs favoritos
+- Interface responsiva
+
+## Tecnologias Utilizadas
+
+- Vue.js 3
+- Quasar Framework v2
+  - Componentes UI Material Design
+  - Suporte a SSR/PWA/Cordova/Capacitor
+  - Hot-reload
+  - Tree-shaking
+- TypeScript
+- Pinia (Gerenciamento de Estado)
+- Axios
