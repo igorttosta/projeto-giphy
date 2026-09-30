@@ -31,7 +31,19 @@ Ou usando yarn:
 yarn
 ```
 
-### 3. Inicie a aplicação em modo desenvolvimento
+### 3. Configure a chave da API do Giphy
+
+Crie uma chave gratuita em [developers.giphy.com](https://developers.giphy.com/dashboard/), copie o arquivo de exemplo e preencha a variável:
+
+```bash
+cp .env.example .env
+```
+
+```env
+GIPHY_API_KEY=sua-chave-aqui
+```
+
+### 4. Inicie a aplicação em modo desenvolvimento
 
 Usando o Quasar CLI:
 

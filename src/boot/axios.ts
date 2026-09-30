@@ -17,7 +17,7 @@ declare module 'vue' {
 const api = axios.create({
   baseURL: 'https://api.giphy.com/v1/gifs',
   params: {
-    api_key: 'c3em68tOY6U9ewx5trrwiGdpiVCed7cr',
+    api_key: process.env.GIPHY_API_KEY,
   },
 });
 
